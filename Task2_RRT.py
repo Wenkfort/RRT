@@ -198,7 +198,7 @@ if __name__ == '__main__':
             # поиск вершины с наилучшей эвристикой и построение точки в области этой вершины
             qnew = randomNode(findBestNode(G), obstacles, size)
             # поиск ближайшей вершины или ребра и создаение связи
-            G = findNearestNode(G, qnew, obstacles, start, size)
+            G = findNearestNode(G, qnew, obstacles, start, size, True)
             # если есть возможность пройти по прямой от точки к финишу, всё кульно
             # drawEnv(G, start, finish, size)
             if G.has_node(qnew) and len(line_circle_intersection(qnew, finish, obstacles)) == 0:
