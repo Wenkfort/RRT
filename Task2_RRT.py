@@ -185,11 +185,11 @@ if __name__ == '__main__':
     # генерация препятствий
     obstacles = setObstacles(N)
 
+    # новый коммент тут
     # добавление точки старта
     G = nx.Graph()
     G.add_node(start)
 
-    # новый коммент
     # Проверка на прохождение по прямой
     if len(line_circle_intersection((start), (finish), obstacles)) == 0:
         G.add_node(finish)
