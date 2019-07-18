@@ -185,7 +185,6 @@ if __name__ == '__main__':
     # генерация препятствий
     obstacles = setObstacles(N)
 
-    # новый коммент тут
     # добавление точки старта
     G = nx.Graph()
     G.add_node(start)
